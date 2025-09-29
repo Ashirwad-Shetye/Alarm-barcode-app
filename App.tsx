@@ -1,20 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text } from "react-native";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+	return (
+		<View className='flex-1 justify-center items-center bg-blue-500'>
+			<Text className='text-white text-3xl font-bold'>
+				NativeWind Works! ✅
+			</Text>
+			<Text className='text-white text-lg mt-4'>
+				Ready to build the alarm app
+			</Text>
+		</View>
+	);
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
